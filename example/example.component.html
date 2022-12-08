@@ -1,0 +1,7 @@
+<input type="text" #fromInput>
+<input type="text" #messageInput>
+<button
+    (click)="send(fromInput.value ,messageInput.value)"
+>Send</button>
+
+<p *ngFor="let message of messages">{{ message }}</p>
